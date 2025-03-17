@@ -1,0 +1,147 @@
+.call {
+    background: url('https://i.pinimg.com/736x/f5/e1/d9/f5e1d9c88107a29792a003ab1bdf0578.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /*նեոնային էֆեկտ*/
+    text-shadow:
+        0 0 10px rgb(216, 22, 22),
+        0 0 20px rgb(255, 0, 0),
+        0 0 40px rgba(255, 0, 0, 0.473);
+}
+
+.callofduty h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow:
+        0 0 10px rgb(216, 22, 22),
+        0 0 20px rgb(255, 0, 0),
+        0 0 40px rgba(255, 0, 0, 0.473);
+}
+
+.callofduty p {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+.s1 {
+    background: rgba(124, 27, 27, 0.959);
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-size: 45;
+}
+
+.s1 h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.s1 h4 {
+    font-weight: normal;
+}
+
+.s {
+    padding: 2rem;
+    text-align: center;
+}
+
+.wins {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.win {
+    background: rgb(244, 244, 244);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.win img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.win h3 {
+    margin: 1rem 0;
+}
+
+.win p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.win button {
+    background: rgba(124, 27, 27, 0.959);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.win button:hover {
+    background: rgb(0, 0, 0);
+}
+
+
+.gallery {
+    background: rgb(249, 249, 249);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.gallery-nkarner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.gallery-sharq {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-sharq img {
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 10px solid rgba(255, 255, 255, 0.438);
+}
+
+
+footer {
+    background: rgba(124, 27, 27, 0.959);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}

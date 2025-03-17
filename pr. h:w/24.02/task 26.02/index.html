@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        padding-top: 50px;
+    }
+
+    .nav {
+        border: 1px solid;
+        background: lightcyan;
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sect {
+        border: 1px solid;
+        width: 100%;
+        height: 100vh;
+        margin: 20px 0;
+    }
+</style>
+
+<body>
+
+    <div class="nav">
+        <button>sectipon 1</button>
+        <button>sectipon 2</button>
+        <button>sectipon 3</button>
+        <button>sectipon 4</button>
+    </div>
+
+    <div class="sect">
+        <h1>SECTION 1</h1>
+    </div>
+    <div class="sect">
+        <h1>SECTION 2</h1>
+    </div>
+    <div class="sect">
+        <h1>SECTION 3</h1>
+    </div>
+    <div class="sect">
+        <h1>SECTION 4</h1>
+    </div>
+    <script>
+
+        var buttons = document.querySelectorAll('.nav button');
+        var sections = document.querySelectorAll('.sect');
+
+        /* // [0] որովհետև ինդեքսը սկսվում է 0-ից
+        // scrollIntoView JS-ի ֆունկցիա է, որը scroll է անում էջը դեպի նշված տարր
+        // { behavior: "smooth" } օբյեկտ է, որը ասում է, որ scroll-ը պետք է լինի սահուն (ոչ թե ակնթարթային)
+         buttons[0].addEventListener('click', () => {
+             sections[0].scrollIntoView({ behavior: "smooth" });
+             var color = `rgb(
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}
+             )`;
+ 
+             // .style թույլ է տալիս փոխել CSS ոճերը JS-ով
+             // .backgroundColor փոխում է տարրի ֆոնի գույնը
+             sections[0].style.backgroundColor = color;
+         });
+ 
+         buttons[1].addEventListener('click', () => {
+             sections[1].scrollIntoView({ behavior: "smooth" });
+             var color = `rgb(
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}
+             )`;
+             sections[1].style.backgroundColor = color;
+         });
+ 
+         buttons[2].addEventListener('click', () => {
+             sections[2].scrollIntoView({ behavior: "smooth" });
+             var color = `rgb(
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}
+             )`;
+             sections[2].style.backgroundColor = color;
+         });
+ 
+         buttons[3].addEventListener('click', () => {
+             sections[3].scrollIntoView({ behavior: "smooth" });
+             var color = `rgb(
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}, 
+                 ${Math.floor(Math.random() * 256)}
+             )`;
+             sections[3].style.backgroundColor = color;
+         }); */
+
+        // for.Each-ը array-ի մեթոդ է, որը անցնում է array-ի յուրաքանչյուր տարրի վրայով և կատարում է նշված գործողությունը
+        // '(button, index) =>' arrow function, որը նշում է, թե ինչ անել յուրաքանչյուր button-ի հետ
+        // [index]-ը համապատասխանում է button-ի համարին
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                sections[index].scrollIntoView({ behavior: "smooth" });
+                var color = `rgb(
+                    ${Math.floor(Math.random() * 256)}, 
+                    ${Math.floor(Math.random() * 256)}, 
+                    ${Math.floor(Math.random() * 256)}
+                )`;
+                sections[index].style.backgroundColor = color;
+            });
+        });
+
+        // index-ը կապում է button-ները section-ների հետ
+        // forEach-ը կրկնում է ներսի կոդը յուրաքանչյուր button-ի համար
+
+    </script>
+
+</body>
+
+</html>

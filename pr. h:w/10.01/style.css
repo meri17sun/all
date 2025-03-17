@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 60px;
+}
+
+
+.all {
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 30%;
+    background-color: rgba(219, 14, 14, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgb(44, 42, 42);
+    transition: transform 0.3s ease;
+
+}
+
+/*ստեղծվում է հպման էֆեկտ, երբ մկնիկը պահում ենք .card տարրի վրա, այն փոքր ինչ մեծանում է*/
+.card:hover {
+    transform: scale(1.05);
+}
+
+.img {
+    height: 300px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    padding: 25px;
+}
+
+.add {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.add span {
+    font-size: 12px;
+    background-color: rgba(221, 216, 216, 0.616);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: rgb(90, 90, 90);
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+.old-price {
+    margin: 10px 0;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+}
+
+.percent {
+    background-color: rgb(118, 189, 90);
+    margin-left: 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: white;
+}
+
+.star i {
+    color: rgba(255, 196, 0, 0.952);
+}
+
+.view {
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.detal {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    background-color: rgb(240, 240, 240);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.add-to-cart {
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(100, 99, 97);
+}
